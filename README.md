@@ -130,10 +130,9 @@ Where $P = 10.0$ penalizes any sampled state that deviates from $B = 5$.
 4. **Local Search Correction:** Executes a classical 2-swap local search on the returned state to correct minor state noise while strictly preserving $B = 5$.
 
 
-# 📈 CVaR Integration & Literature Synthesis
----
+## 📈 CVaR Integration & Literature Synthesis
 
-## 💡 The Core Problem with Standard Expectation Values
+### 💡 The Core Problem with Standard Expectation Values
 
 Standard variational algorithms like VQE and QAOA calculate the energy expectation value $\langle H \rangle$ using the **arithmetic mean** across all sampled measurement outcomes:
 
@@ -144,13 +143,14 @@ While arithmetic mean aggregation works well for physical system observables (e.
 * **Averaging Hides Low-Cost Solutions:** High-quality, low-energy candidate bitstrings can easily get washed out when averaged alongside high-cost, suboptimal samples.
 * **Flattered Search Landscapes:** Optimization relies on finding *any* optimal ground state, not on maximizing the average quality of random quantum state measurements.
 
----
-
-## 🎯 CVaR as a Sample-Aggregation Engine
+### 🎯 CVaR as a Sample-Aggregation Engine
 
 To fix this mismatch, **CVaR sample-aggregation ($\text{CVaR}_\alpha$)** modifies the classical feedback loop. Instead of averaging all $M$ measured bitstrings, the optimizer evaluates only the **best $(1 - \alpha)$ fraction** (the tail) of the sampled energy distribution:
 
 $$\text{CVaR}_\alpha = \frac{1}{\lceil \alpha M \rceil} \sum_{k=1}^{\lceil \alpha M \rceil} E(\mathbf{x}_{(k)})$$
 
-where $E(\mathbf{x}_{(1)}) \le E(\mathbf{x}_{(2)}) \le \dots \le E(\mathbf{x}_{(M)})$ represent sorted sampled energy states.
-___
+Where:
+
+$$E(\mathbf{x}_{(1)}) \le E(\mathbf{x}_{(2)}) \le \dots \le E(\mathbf{x}_{(M)})$$
+
+represents the ascendingly sorted energy states sampled from the quantum circuit.
