@@ -138,14 +138,16 @@ Standard variational algorithms like VQE and QAOA calculate the energy expectati
 
 $$\langle H \rangle = \frac{1}{M} \sum_{k=1}^{M} E(\mathbf{x}_k)$$
 
-While arithmetic mean aggregation works well for physical system observables (e.g., ground-state molecular energies), it introduces a structural flaw for classical combinatorial optimization problems (diagonal Hamiltonians):
+While arithmetic mean aggregation works well for physical system observables (e.g., ground-state energies), it introduces a structural flaw for classical combinatorial optimization problems (diagonal Hamiltonians):
 
 * **Averaging Hides Low-Cost Solutions:** High-quality, low-energy candidate bitstrings can easily get washed out when averaged alongside high-cost, suboptimal samples.
 * **Flattered Search Landscapes:** Optimization relies on finding *any* optimal ground state, not on maximizing the average quality of random quantum state measurements.
+* **Cost function:** The QUBO cost function (weighted mean) translates a 10-asset portfolio optimization problem into an Ising Hamiltonian by mapping expected return ($\boldsymbol{\mu}$), risk-variance ($\mathbf{\Sigma}$), transaction costs, and liquidity preferences alongside quadratic penalty terms for budget ($B=5$). Asset-class limits into ground-state Hamiltonian.
 
+  
 ### 🎯 CVaR as a Sample-Aggregation Engine
 
-To fix this mismatch, **CVaR sample-aggregation ($\text{CVaR}_\alpha$)** modifies the classical feedback loop. Instead of averaging all $M$ measured bitstrings, the optimizer evaluates only the **best $(1 - \alpha)$ fraction** (the tail) of the sampled energy distribution:
+To fix this mismatch, **CVaR sample-aggregation ($\text{CVaR}_\alpha$)** modifies the classical feedback loop. Instead of averaging all $M$ measured bitstrings, the optimizer evaluates only the **best $(1 - \alpha)$ fraction** of the sampled energy distribution:
 
 $$\text{CVaR}_\alpha = \frac{1}{\lceil \alpha M \rceil} \sum_{k=1}^{\lceil \alpha M \rceil} E(\mathbf{x}_{(k)})$$
 
@@ -155,15 +157,17 @@ $$E(\mathbf{x}_{(1)}) \le E(\mathbf{x}_{(2)}) \le \dots \le E(\mathbf{x}_{(M)})$
 
 represents the ascendingly sorted energy states sampled from the quantum circuit.
 
-## 🛠️ Limitations and Future work
-* Classical and Quantum optimization results are not matching (no fixed asset sets recommended)
+## 🛠️ Future work
+
 * Prone to large datasets with more than 10 asset values to test this hypothesis
 * Extend qubits simulation for scalability
   
+  
 ## 📚 References & Credits
-AI Tools Used for coding mathematical formulae mapping verification, classical algorithm optimization and documentation word formatting. Google Collab to execute the program.
+
+AI Tools used for evaluating mathematical formulae mapping verification, and algorithm optimization. Google Colab to execute the Co-pilot program.
 
 references:
 * WISER challenge materials
-* dataset created using the document - https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation
+* Dataset created using the document - https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation
 
