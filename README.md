@@ -35,7 +35,7 @@ The table below defines each asset by its unique identifier, asset name, and hig
 
 > 💡 **Why Diversification Matters**
 > 
-> Distributing the universe across **5 distinct asset classes** (*Equities, Fixed Income, Commodities, Currency, and Alternatives/Cash*) ensures that sector diversification constraints have meaningful choices to make. A valid portfolio cannot simply select all equities or all bonds without violating strict asset-class-level exposure limits.
+> Distributing the data-universe across **5 distinct asset classes** (*Equities, Fixed Income, Commodities, Currency, and Alternatives/Cash*) ensures that sector diversification constraints have meaningful choices to make. A valid portfolio cannot simply select all equities or all bonds without violating strict asset-class-level exposure limits.
 
 ## 🛠️ Installation & Setup
 
