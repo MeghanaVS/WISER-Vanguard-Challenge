@@ -159,7 +159,7 @@ represents the ascendingly sorted energy states sampled from the quantum circuit
 
 ## 🛠️ Future work
 
-* Prone to large datasets with more than 10 asset values to test this hypothesis
+* Prone to large datasets with more than 10 asset values and variables such as B>5, P to test this hypothesis
 * Extend qubits simulation for scalability
   
   
