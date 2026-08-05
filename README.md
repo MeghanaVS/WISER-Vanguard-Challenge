@@ -159,6 +159,7 @@ represents the ascendingly sorted energy states sampled from the quantum circuit
 AI Tools Used for coding mathematical formulae mapping verification, classical algorithm optimization and documentation word formatting.
 
 references:
+* WISER challenge materials
 * dataset created using the document - https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation
 
 
