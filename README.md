@@ -153,3 +153,5 @@ To fix this mismatch, **CVaR sample-aggregation ($\text{CVaR}_\alpha$)** modifie
 $$\text{CVaR}_\alpha = \frac{1}{\lceil \alpha M \rceil} \sum_{k=1}^{\lceil \alpha M \rceil} E(\mathbf{x}_{(k)})$$
 
 where $E(\mathbf{x}_{(1)}) \le E(\mathbf{x}_{(2)}) \le \dots \le E(\mathbf{x}_{(M)})$ represent sorted sampled energy states.
+
+---
