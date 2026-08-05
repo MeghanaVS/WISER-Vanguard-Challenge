@@ -1,4 +1,4 @@
-# Quantum Portfolio Optimization Engine
+# ⚡Quantum Portfolio Optimization Engine
 
 A hybrid optimization framework designed to solve complex portfolio allocation problems. This pipeline generates synthetic financial market data, formulates the allocation as a Quadratic Unconstrained Binary Optimization (QUBO) problem, and evaluates performance across both classical brute-force baselines and quantum Approximate Optimization Algorithm (QAOA) solvers with local optimization.
 
@@ -15,7 +15,6 @@ graph TD
 ```
 ## 🌐 Asset Universe & Decision Variables
 
-### Asset Universe
 The portfolio universe consists of **N = 10 synthetic assets** spanning multiple asset classes to enable meaningful diversification constraints later in the project.
 
 The table below defines each asset by its unique identifier, asset name, and high-level asset class:
@@ -123,12 +122,9 @@ $$H(\mathbf{x}) = q (\mathbf{x}^T \Sigma \mathbf{x}) - \boldsymbol{\mu}^T \mathb
 
 Where $P = 10.0$ penalizes any sampled state that deviates from $B = 5$.
 
-```
-```
 ## 📊 Pipeline Overview & Execution Steps
 
 1. **Market Generation:** Constructs synthetic expected returns vector ($\boldsymbol{\mu}$) and covariance matrix ($\Sigma$).
 2. **Ising Translation:** Converts QUBO matrices into Pauli $Z$ operators using standard variable change ($x_i \to \frac{1 - Z_i}{2}$).
 3. **Variational Optimization:** Runs QAOA with $p=2$ layers using the COBYLA optimizer.
 4. **Local Search Correction:** Executes a classical 2-swap local search on the returned state to correct minor state noise while strictly preserving $B = 5$.
-```
