@@ -1,6 +1,3 @@
-# WISER-Vanguard-Challenge
-
-
 # Quantum Portfolio Optimization Engine
 
 A hybrid optimization framework designed to solve complex portfolio allocation problems. This pipeline generates synthetic financial market data, formulates the allocation as a Quadratic Unconstrained Binary Optimization (QUBO) problem, and evaluates performance across both classical brute-force baselines and quantum Approximate Optimization Algorithm (QAOA) solvers with local optimization.
