@@ -1,6 +1,7 @@
 # WISER-Vanguard-Challenge
 
-# Portfolio Optimization Engine: Quantum vs. Classical
+
+# Quantum Portfolio Optimization Engine
 
 A hybrid optimization framework designed to solve complex portfolio allocation problems. This pipeline generates synthetic financial market data, formulates the allocation as a Quadratic Unconstrained Binary Optimization (QUBO) problem, and evaluates performance across both classical brute-force baselines and quantum Approximate Optimization Algorithm (QAOA) solvers with local optimization.
 
@@ -50,12 +51,6 @@ To run the quantum optimization algorithms in this repository, install `qiskit` 
 ```bash
 pip install qiskit qiskit-algorithms
 ```
----
-
-# Quantum Portfolio Optimization Engine
-
-A hybrid quantum-classical framework built on Qiskit to solve constrained multi-asset allocation problems. This project translates standard portfolio selection models into a Quadratic Unconstrained Binary Optimization (QUBO) problem, maps it to an Ising Hamiltonian, and solves it using the Quantum Approximate Optimization Algorithm (QAOA) coupled with classical local post-processing.
-
 ---
 
 ## 📌 Problem Statement
