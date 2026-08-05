@@ -34,7 +34,7 @@ The table below defines each asset by its unique identifier, asset name, and hig
 
 > 💡 **Why Diversification Matters**
 > 
-> Distributing the data-universe across **5 distinct asset classes** (*Equities, Fixed Income, Commodities, Currency, and Alternatives/Cash*) ensures that sector diversification constraints have meaningful choices to make. A valid portfolio cannot simply select all equities or all bonds without violating strict asset-class-level exposure limits.
+> Distributing the data-universe across **5 distinct asset classes** (*Equities, Fixed Income, Commodities, Currency, and Alternatives/Cash*) ensures that sector diversification constraints have meaningful choices to make. A valid portfolio cannot simply select all equities or all bonds without violating strict asset-class-level exposure limits. In a nutshell it matters because of value at risk proportionality.
 
 ## 🛠️ Installation & Setup
 
@@ -73,13 +73,13 @@ where:
 * $x_i = 1$ if asset $i$ is **selected** in the portfolio
 * $x_i = 0$ **otherwise**
 
-Using discrete binary selection aligns directly with standard Ising formulations ($Z_i$ Pauli operators). It maintains a $2^{10} = 1,024$ state search space, making it small enough to run on current quantum hardware while avoiding the heavy penalty-tuning overhead associated with discretized fractional weights.
+Using discrete binary selection aligns directly with standard Ising formulations ($Z_i$ Pauli operators). It maintains a $2^{10} = 1,024$ (bits) state space search, making it small enough to run on current quantum hardware while avoiding the heavy penalty-tuning overhead associated with discretized fractional weights.
 
 > **💡 Justification for Binary Selection (vs. Discretized Weights)**  
-> Binary selection maps directly to QUBO/Ising Hamiltonians suitable for variational quantum algorithms like **QAOA** and **SamplingVQE**. It maintains a tractable search space ($2^{10} = 1,024$ possible state combinations) while eliminating penalty-weight tuning complexities inherent to discretized allocation weights.
+> Binary selection maps directly to QUBO/Ising Hamiltonians suitable for variational quantum algorithms like **QAOA** and **SamplingVQE**. When we have parameterized quantum circuits to extract probability amplitudes by using sampling VQE. It maintains a tractable search space ($2^{10} = 1,024$ possible state combinations) while eliminating penalty-weight tuning complexities inherent to discretized allocation weights.
 
 ---
-### 🎯 Budget Constraint
+### 🎯 Budget Constraints
 
 The optimization enforces an exact cardinality constraint where the portfolio selects precisely $B = 5$ assets out of the 10 candidate universe:
 
@@ -94,7 +94,7 @@ Choosing $B = 5$ forces the model to evaluate real trade-offs across correlated 
 
 ### ⚠️ Hardware Mapping: $N = 10$
 
-Real-world institutional portfolio optimization operates over universes of thousands of assets, creating an exponential combinatorial bottleneck ($2^N$) that motivates quantum computing solutions. Because every binary variable maps 1:1 to a qubit, the 10-variable model requires **10 qubits**. The budget constraint is incorporated directly into the Hamiltonian matrix, meaning no additional ancilla qubits are required.
+Real-world institutional portfolio optimization operates over universes of assets, creating an exponential combinatorial bottleneck ($2^N$) that motivates quantum computing solutions. Because every binary variable maps 1:1 to a qubit, the 10-variable model requires **10 qubits**. The budget constraint is incorporated directly into the Hamiltonian matrix, meaning no additional ancilla qubits are required.
 
 This **$N = 10$ binary model** serves as a deliberate proof-of-concept prototype to:
 
@@ -127,7 +127,7 @@ Where $P = 10.0$ penalizes any sampled state that deviates from $B = 5$.
 1. **Market Generation:** Constructs synthetic expected returns vector ($\boldsymbol{\mu}$) and covariance matrix ($\Sigma$).
 2. **Ising Translation:** Converts QUBO matrices into Pauli $Z$ operators using standard variable change ($x_i \to \frac{1 - Z_i}{2}$).
 3. **Variational Optimization:** Runs QAOA with $p=2$ layers using the COBYLA optimizer.
-4. **Local Search Correction:** Executes a classical 2-swap local search on the returned state to correct minor state noise while strictly preserving $B = 5$.
+4. **Local Search Correction:** Executes a classical 2-swap local search on the returned state to correct state noise while strictly preserving $B = 5$.
 
 
 ## 📈 CVaR Integration & Literature Synthesis
@@ -161,7 +161,7 @@ represents the ascendingly sorted energy states sampled from the quantum circuit
 * Extend qubits simulation for scalability
   
 ## 📚 References & Credits
-AI Tools Used for coding mathematical formulae mapping verification, classical algorithm optimization and documentation word formatting.
+AI Tools Used for coding mathematical formulae mapping verification, classical algorithm optimization and documentation word formatting. Google Collab to execute the program.
 
 references:
 * WISER challenge materials
