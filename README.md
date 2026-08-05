@@ -154,3 +154,13 @@ Where:
 $$E(\mathbf{x}_{(1)}) \le E(\mathbf{x}_{(2)}) \le \dots \le E(\mathbf{x}_{(M)})$$
 
 represents the ascendingly sorted energy states sampled from the quantum circuit.
+
+## 📚 References & Credits
+AI Tools Used for coding mathematical formulae mapping verification, classical algorithm optimization and documentation file word formatting.
+
+references:
+* dataset created using the document - https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation
+  
+
+
+
