@@ -168,6 +168,6 @@ represents the ascendingly sorted energy states sampled from the quantum circuit
 AI Tools used for evaluating mathematical formulae mapping verification, and algorithm optimization. Google Colab to execute the Co-pilot program.
 
 references:
-* WISER challenge materials
+* WISER challenge materials (Video tutorials)
 * Dataset created using the document - https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation
 
