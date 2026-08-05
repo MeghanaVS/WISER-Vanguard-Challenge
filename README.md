@@ -1,6 +1,6 @@
 # ⚡Quantum Portfolio Optimization Engine
 
-A hybrid optimization framework designed to solve complex portfolio allocation problems. This pipeline generates synthetic financial market data, formulates the allocation as a Quadratic Unconstrained Binary Optimization (QUBO) problem, and evaluates performance across both classical brute-force baselines and quantum Approximate Optimization Algorithm (QAOA) solvers with local optimization.
+Optimization framework designed to solve multi-asset portfolio allocation problems. This pipeline generates synthetic financial market data, formulates the allocation as a Quadratic Unconstrained Binary Optimization (QUBO) problem, CVaR modification for the classical feedback loop and evaluates performance across both classical brute-force baselines and quantum Approximate Optimization Algorithm (QAOA) solvers with local optimization.
 
 ## 🏗️ System Architecture
 
@@ -155,11 +155,15 @@ $$E(\mathbf{x}_{(1)}) \le E(\mathbf{x}_{(2)}) \le \dots \le E(\mathbf{x}_{(M)})$
 
 represents the ascendingly sorted energy states sampled from the quantum circuit.
 
+## 🛠️ Limitations and Future work
+* Classical and Quantum optimization results are not matching (no fixed asset sets recommended)
+* Prone to large datasets with more than 10 asset values to test this hypothesis
+* Extend qubits simulation for scalability
+  
 ## 📚 References & Credits
 AI Tools Used for coding mathematical formulae mapping verification, classical algorithm optimization and documentation word formatting.
 
 references:
 * WISER challenge materials
 * dataset created using the document - https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation
-
 
