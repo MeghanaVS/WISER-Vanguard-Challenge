@@ -180,7 +180,7 @@ represents the ascendingly sorted energy states sampled from the quantum circuit
 
 ## 🔢 Output Co-pilot Report
 ---
-    Dataset 1:
+    Asset selected = 5, Optimised = 4:
     
 - Optimized Portfolio Bitstring: 0100110100
 
@@ -198,7 +198,7 @@ Selected Asset Portfolio (B=5):
  - A8 (Return: 7.0%, Vol: 14.0%)
  - A9 (Return: 6.0%, Vol: 10.0%)
 ---
-    Dataset 2:
+    Asset selected = 7:
     
 [QUBO Engine Initialization]
  - Qubit Count Required: 10
