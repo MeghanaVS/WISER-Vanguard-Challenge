@@ -178,7 +178,7 @@ $$E(\mathbf{x}_{(1)}) \le E(\mathbf{x}_{(2)}) \le \dots \le E(\mathbf{x}_{(M)})$
 
 represents the ascendingly sorted energy states sampled from the quantum circuit.
 
-## 🔢 Output Copiot Report
+## 🔢 Output Co-pilot Report
 ---
     Dataset 1:
     
