@@ -186,7 +186,7 @@ represents the ascendingly sorted energy states sampled from the quantum circuit
   
 ## 📚 References & Credits
 
-AI Tools used for evaluating mathematical formulae mapping verification, and algorithm optimization. Google Colab to execute the Co-pilot program.
+AI Tools used for evaluating mathematical formulae mapping verification, algorithm optimization and documentation formatting. Google Colab to execute the Co-pilot program.
 
 references:
 * WISER challenge materials (Video tutorials)
