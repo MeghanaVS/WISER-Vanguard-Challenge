@@ -154,16 +154,18 @@ Where $P = 10.0$ penalizes any sampled state that deviates from $B = 5$.
 
 ## 🗄️ Dataset, Results & Code Implementation:
 
-The repository includes results from multiple stages of the project:
+The repository integrates two complementary approaches for quantum portfolio optimization:
 
-Approach 1:
+### Approach 1: QAOA Implementation & Theoretical Foundations
+* [Qiskit Implementation Notebook](https://github.com/MeghanaVS/WISER-Vanguard-Challenge/blob/main/Qiskit_Implementation-Final.ipynb)
+* [QAOA Manual Documentation (PDF)](https://github.com/MeghanaVS/WISER-Vanguard-Challenge/blob/main/manual_qaoa%20(1).pdf)
 
-- https://github.com/MeghanaVS/WISER-Vanguard-Challenge/blob/main/Qiskit_Implementation-Final.ipynb
-- https://github.com/MeghanaVS/WISER-Vanguard-Challenge/blob/main/manual_qaoa%20(1).pdf
-
-Approach 2:
-
-- https://github.com/PaAssareh/quantum-portfolio-optimization.git
+### Approach 2: Modular End-to-End Hybrid Pipeline
+* [Full Pipeline Repository](https://github.com/PaAssareh/quantum-portfolio-optimization.git)
+* **Core Components & Outputs:**
+  * [Source Code (`src/`)](https://github.com/PaAssareh/quantum-portfolio-optimization/tree/main/src) — Data loading, QUBO optimization, regime detection, and rebalancing.
+  * [Processed Market Data (`data/processed/`)](https://github.com/PaAssareh/quantum-portfolio-optimization/tree/main/data/processed)
+  * [Results & Backtest Reports (`results/`)](https://github.com/PaAssareh/quantum-portfolio-optimization/tree/main/results)
   
 ---
 
