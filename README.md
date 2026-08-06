@@ -150,6 +150,25 @@ Where $P = 10.0$ penalizes any sampled state that deviates from $B = 5$.
 3. **Variational Optimization:** Runs QAOA with $p=2$ layers using the COBYLA optimizer.
 4. **Local Search Correction:** Executes a classical 2-swap local search on the returned state to correct state noise while strictly preserving $B = 5$.
 
+---
+
+## 🗄️ Dataset, Results & Code Implementation:
+
+The repository includes results from multiple stages of the project:
+
+Approach 1:
+
+- https://github.com/MeghanaVS/WISER-Vanguard-Challenge/blob/main/Qiskit_Implementation-Final.ipynb
+- https://github.com/MeghanaVS/WISER-Vanguard-Challenge/blob/main/manual_qaoa%20(1).pdf
+
+Approach 2:
+
+- [Phase 1 results](results/phase1_p1_iter20.txt)
+- Phase 2 backtest report](results/phase2_report.txt)
+- [Phase 2 backtest metrics](results/phase2_backtest_metrics.csv)
+- [Phase 3 model-fix report](outputs/phase3_report.md)
+  
+---
 
 ## 📈 CVaR Integration & Literature Synthesis
 
