@@ -220,7 +220,7 @@ references:
 * WISER challenge materials (Video tutorials)
 * Dataset created using the document - https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation
 
-## 📧 Contact Team - WISER-MPY 🤝
+## 📧 Contact Team: WISER-MPY 🤝
 👩🏻‍💻 - meghanavs11@gmail.com
 👩🏻‍💻 - Pa.assareh@gmail.com
 👨🏾‍💻 - ymathala@gitam.in
