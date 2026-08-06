@@ -163,10 +163,7 @@ Approach 1:
 
 Approach 2:
 
-- [Phase 1 results](results/phase1_p1_iter20.txt)
-- Phase 2 backtest report](results/phase2_report.txt)
-- [Phase 2 backtest metrics](results/phase2_backtest_metrics.csv)
-- [Phase 3 model-fix report](outputs/phase3_report.md)
+- https://github.com/PaAssareh/quantum-portfolio-optimization.git
   
 ---
 
