@@ -1,7 +1,7 @@
 # Security Policy
 
 ## Supported Versions
-
+Memory T4 GPU
 Python 3.8 and above.
 Modern Qiskit (qiskit >= 1.0.0)
 
@@ -14,8 +14,15 @@ Modern Qiskit (qiskit >= 1.0.0)
 
 ## Reporting a Vulnerability
 
-Use this section to tell people how to report a vulnerability.
+| Memory | Execution Time/Cell | Total Time    |
+| ------- | ------------------ | --------------|
+| RAM/CPU   | 19s + 49m + |
+| T4/GPU   | 9s +               |
 
-Tell them where to go, how often they can expect to get an update on a
-reported vulnerability, what to expect if the vulnerability is accepted or
-declined, etc.
+Each Cell execution time (minutes): 
+-----------------------------------
+Cell 1 - Library Installation and restart time = 9seconds
+Cell 2 - Core library imports, Synthetic Market Data Generation, Mathematical QUBO and Ising Mapping Engine, Optimization Logic = 49m 
+Cell 3 - Hybrid Post-Processing, Main Workflow Execution = 
+Cell 4 - CO-PILOT Engine runner with another dataset samples = 
+
