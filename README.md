@@ -122,6 +122,27 @@ $$H(\mathbf{x}) = q (\mathbf{x}^T \Sigma \mathbf{x}) - \boldsymbol{\mu}^T \mathb
 
 Where $P = 10.0$ penalizes any sampled state that deviates from $B = 5$.
 
+**`pauli_list`** is used as a Quantum Translator.
+
+### 🔄 Translator Workflow
+
+```text
+┌────────────────────────────────┐
+│   Classical QUBO Formulation   │  x_i ∈ {0, 1}  (Binary Variables)
+└───────────────┬────────────────┘
+                │
+                │  Transformation: x_i = (1 - Z_i) / 2
+                ▼
+┌────────────────────────────────┐
+│          pauli_list            │  Translator Bridge
+└───────────────┬────────────────┘
+                │
+                ▼
+┌────────────────────────────────┐
+│   Quantum Ising Hamiltonian    │  Z_i ∈ {+1, -1} (Qubit Measurements)
+└────────────────────────────────┘
+
+```
 ## 📊 Pipeline Overview & Execution Steps
 
 1. **Market Generation:** Constructs synthetic expected returns vector ($\boldsymbol{\mu}$) and covariance matrix ($\Sigma$).
