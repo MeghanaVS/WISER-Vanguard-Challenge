@@ -178,6 +178,34 @@ $$E(\mathbf{x}_{(1)}) \le E(\mathbf{x}_{(2)}) \le \dots \le E(\mathbf{x}_{(M)})$
 
 represents the ascendingly sorted energy states sampled from the quantum circuit.
 
+## 🔢 Output Copiot Report
+---
+    Dataset 1:
+    
+- Optimized Portfolio Bitstring: 0100110100
+
+- Ising Hamiltonian Qubit Count: 10
+- Energy Shift Offset: 24.8339
+- [QAOA] Measured Bitstring: 1011101000
+- [QAOA] Raw QUBO Cost: -0.1778
+- [Hybrid Refinement] Best Bitstring: 1010100110
+- [Hybrid Refinement] Refined Cost: -0.2194
+
+Selected Asset Portfolio (B=5):
+ - A1 (Return: 8.0%, Vol: 15.0%)
+ - A3 (Return: 9.0%, Vol: 21.0%)
+ - A5 (Return: 4.0%, Vol: 7.0%)
+ - A8 (Return: 7.0%, Vol: 14.0%)
+ - A9 (Return: 6.0%, Vol: 10.0%)
+---
+    Dataset 2:
+    
+[QUBO Engine Initialization]
+ - Qubit Count Required: 10
+ - Hamiltonian Energy Shift Offset: 28.7783
+   
+<img width="1003" height="553" alt="Screenshot 2026-08-06 at 3 44 08 PM" src="https://github.com/user-attachments/assets/46d2f312-ea0b-4386-bab5-2763ea6308d0" />
+
 ## 🛠️ Future work
 
 * Prone to large datasets with more than 10 asset values and variables such as B>5, P to test this hypothesis
