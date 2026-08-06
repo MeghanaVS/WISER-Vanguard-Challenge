@@ -2,15 +2,15 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Python 3.8 and above.
+Modern Qiskit (qiskit >= 1.0.0)
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 5.1.x   | :white_check_mark: |
-| 5.0.x   | :x:                |
-| 4.0.x   | :white_check_mark: |
-| < 4.0   | :x:                |
+| >= 3.8   | :white_check_mark: |
+| < 3.0   | :x:                |
+| >= 1.0.x   | :white_check_mark: |
+| < 1.0.x   | :x:                |
 
 ## Reporting a Vulnerability
 
