@@ -61,7 +61,7 @@ Portfolio optimization requires picking an optimal subset of assets to maximize 
 The primary goal is to find an optimal allocation binary vector that maximizes utility without violating operational boundaries.
 
 
-## 🔢 Decision Variables & Portfolio Constraints
+## 📁 Decision Variables & Portfolio Constraints
 
 ### Decision Variable Encoding
 
