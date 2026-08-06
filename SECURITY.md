@@ -16,7 +16,7 @@ Modern Qiskit (qiskit >= 1.0.0)
 
 | Memory | Execution Time/Cell 
 | ------- | ------------------ |
-| RAM/CPU   | 19s + 49m + 52m + 59m |
+| RAM/CPU   | 19s + 49m + 62m + 77m |
 | T4/GPU   | 9s + 16m + 24m + 32m   |
 
 Each Cell execution time (seconds/minutes): 
