@@ -12,7 +12,7 @@ Modern Qiskit (qiskit >= 1.0.0)
 | >= 1.0.x   | :white_check_mark: |
 | < 1.0.x   | :x:                |
 
-## Reporting a Vulnerability
+## Memory Vulnerability
 
 | Memory | Execution Time/Cell 
 | ------- | ------------------ |
