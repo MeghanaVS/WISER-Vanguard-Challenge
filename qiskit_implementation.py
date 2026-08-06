@@ -153,7 +153,7 @@ if __name__ == "__main__":
         print(f" - {asset_names[idx]} (Return: {mu[idx]*100:.1f}%, Vol: {np.sqrt(sigma[idx,idx])*100:.1f}%)")
 
 # CO-PILOT Engine runner with another dataset samples
-'''
+
 # 1. Synthetic Market Data and Metadata Generation
 
 def generate_market_data(seed: int = 42) -> Dict[str, Any]:
@@ -358,7 +358,7 @@ def classical_local_search_refinement(best_bitstring: str, mapper: ExtendedQuant
                 break
 
     return "".join(map(str, current_x)), current_cost
-'''
+
 # 5. Portfolio Co-Pilot and Metrics Engine
 def analyze_portfolio(bitstring: str, data: Dict[str, Any], mapper: ExtendedQuantumPortfolioMapper) -> Dict[str, Any]:
     x = np.array([int(b) for b in bitstring])
