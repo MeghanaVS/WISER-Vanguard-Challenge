@@ -21,8 +21,8 @@ Modern Qiskit (qiskit >= 1.0.0)
 
 Each Cell execution time (minutes): 
 -----------------------------------
-Cell 1 - Library Installation and restart time = 9seconds
-Cell 2 - Core library imports, Synthetic Market Data Generation, Mathematical QUBO and Ising Mapping Engine, Optimization Logic = 49m 
-Cell 3 - Hybrid Post-Processing, Main Workflow Execution = 
-Cell 4 - CO-PILOT Engine runner with another dataset samples = 
+* Cell 1 - Library Installation and restart time = 9seconds
+* Cell 2 - Core library imports, Synthetic Market Data Generation, Mathematical QUBO and Ising Mapping Engine, Optimization Logic = 49m 
+* Cell 3 - Hybrid Post-Processing, Main Workflow Execution = 
+* Cell 4 - CO-PILOT Engine runner with another dataset samples = 
 
