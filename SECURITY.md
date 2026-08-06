@@ -14,15 +14,15 @@ Modern Qiskit (qiskit >= 1.0.0)
 
 ## Reporting a Vulnerability
 
-| Memory | Execution Time/Cell | Total Time    |
-| ------- | ------------------ | --------------|
-| RAM/CPU   | 19s + 49m + |
-| T4/GPU   | 9s +               |
+| Memory | Execution Time/Cell 
+| ------- | ------------------ |
+| RAM/CPU   | 19s + 49m + 52m + 59m |
+| T4/GPU   | 9s + 16m + 24m + 32m   |
 
-Each Cell execution time (minutes): 
------------------------------------
-* Cell 1 - Library Installation and restart time = 9seconds
-* Cell 2 - Core library imports, Synthetic Market Data Generation, Mathematical QUBO and Ising Mapping Engine, Optimization Logic = 49m 
-* Cell 3 - Hybrid Post-Processing, Main Workflow Execution = 
-* Cell 4 - CO-PILOT Engine runner with another dataset samples = 
+Each Cell execution time (seconds/minutes): 
+------------------------------------------
+* Cell 1 - Library Installation and restart time 
+* Cell 2 - Core library imports, Synthetic Market Data Generation, Mathematical QUBO and Ising Mapping Engine, Optimization Logic 
+* Cell 3 - Hybrid Post-Processing, Main Workflow Execution
+* Cell 4 - CO-PILOT Engine runner with another dataset samples
 
