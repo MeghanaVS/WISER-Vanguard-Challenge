@@ -92,7 +92,7 @@ $$\sum_{i=1}^{10} x_i = B \quad \text{where } B = 5$$
 
 Choosing $B = 5$ forces the model to evaluate real trade-offs across correlated asset classes rather than choosing a trivial subset (like $B=1$ or $B=9$).
 
-### ⚠️ Hardware Mapping: $N = 10$
+### ⚙️ Hardware Mapping: $N = 10$
 
 Real-world institutional portfolio optimization operates over universes of assets, creating an exponential combinatorial bottleneck ($2^N$) that motivates quantum computing solutions. Because every binary variable maps 1:1 to a qubit, the 10-variable model requires **10 qubits**. The budget constraint is incorporated directly into the Hamiltonian matrix, meaning no additional ancilla qubits are required.
 
@@ -166,7 +166,7 @@ While arithmetic mean aggregation works well for physical system observables (e.
 * **Cost function:** The QUBO cost function (weighted mean) translates a 10-asset portfolio optimization problem into an Ising Hamiltonian by mapping expected return ($\boldsymbol{\mu}$), risk-variance ($\mathbf{\Sigma}$), transaction costs, and liquidity preferences alongside quadratic penalty terms for budget ($B=5$). Asset-class limits into ground-state Hamiltonian.
 
   
-### 🎯 CVaR as a Sample-Aggregation Engine
+### 🔋 CVaR as a Sample-Aggregation Engine
 
 To fix this mismatch, **CVaR sample-aggregation ($\text{CVaR}_\alpha$)** modifies the classical feedback loop. Instead of averaging all $M$ measured bitstrings, the optimizer evaluates only the **best $(1 - \alpha)$ fraction** of the sampled energy distribution:
 
@@ -206,7 +206,7 @@ Selected Asset Portfolio (B=5):
    
 <img width="1003" height="553" alt="Screenshot 2026-08-06 at 3 44 08 PM" src="https://github.com/user-attachments/assets/46d2f312-ea0b-4386-bab5-2763ea6308d0" />
 
-## 🛠️ Future work
+## 💪 Future work
 
 * Prone to large datasets with more than 10 asset values and variables such as B>5, P to test this hypothesis
 * Extend qubits simulation for scalability
@@ -220,3 +220,7 @@ references:
 * WISER challenge materials (Video tutorials)
 * Dataset created using the document - https://investor.vanguard.com/investor-resources-education/education/model-portfolio-allocation
 
+## 📧 Contact Team - WISER-MPY 🤝
+👩🏻‍💻 - meghanavs11@gmail.com
+👩🏻‍💻 - Pa.assareh@gmail.com
+👨🏾‍💻 - ymathala@gitam.in
