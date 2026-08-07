@@ -156,7 +156,7 @@ Where $P = 10.0$ penalizes any sampled state that deviates from $B = 5$.
 
 The repository integrates two complementary approaches for quantum portfolio optimization:
 
-### Approach 1: QAOA Implementation & Theoretical Foundations
+### Approach 1: Co-Pilot report using Classical-QUBO-QAOA Implementation & Theoretical Foundations
 * [Qiskit Implementation Notebook](https://github.com/MeghanaVS/WISER-Vanguard-Challenge/blob/main/Qiskit_Implementation-Final.ipynb)
 * [QAOA Manual Documentation (PDF)](https://github.com/MeghanaVS/WISER-Vanguard-Challenge/blob/main/manual_qaoa%20(1).pdf)
 
@@ -226,6 +226,7 @@ Selected Asset Portfolio (B=5):
 
 ## 💪 Future work
 
+* Improved memory runtime, hardware and algorithm design using Cirq, Classiq frameworks
 * Prone to large datasets with more than 10 asset values and variables such as B>5, P to test this hypothesis
 * Extend qubits simulation for scalability
   
